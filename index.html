@@ -6,5 +6,376 @@
 <body>
 <h2>Test 2</h2>
 <p>Git Test 1</p>
+    <p>C:\Users\sh00476>cd dektop
+The system cannot find the path specified.
+
+C:\Users\sh00476>cd destop
+The system cannot find the path specified.
+
+C:\Users\sh00476>cd desktop
+
+C:\Users\sh00476\Desktop>cd test1
+
+C:\Users\sh00476\Desktop\Test1>git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   index.html
+
+
+C:\Users\sh00476\Desktop\Test1>git remote dd origin https://github.com/shahkus11/Test.git
+error: Unknown subcommand: dd
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+C:\Users\sh00476\Desktop\Test1>git remote add origin https://github.com/shahkus11/Test.git
+
+C:\Users\sh00476\Desktop\Test1>git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+C:\Users\sh00476\Desktop\Test1>git push --set-upstream origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/shahkus11/Test.git'
+
+C:\Users\sh00476\Desktop\Test1>git remote origin master
+error: Unknown subcommand: origin
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+C:\Users\sh00476\Desktop\Test1>git pull
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com/': git push
+Password for 'https://git push@github.com/':
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/shahkus11/Test.git/'
+
+C:\Users\sh00476\Desktop\Test1>git commit -m "first test"
+[master (root-commit) 71bc488] first test
+ Committer: Kush Piyush Shah <sh00476@oerb.lan>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 9 insertions(+)
+ create mode 100644 index.html
+
+C:\Users\sh00476\Desktop\Test1>git remote add origin https://github.com/shahkus11/Test.git
+fatal: remote origin already exists.
+
+C:\Users\sh00476\Desktop\Test1>git push -u origin master
+remote: Repository not found.
+fatal: repository 'https://github.com/shahkus11/Test.git/' not found
+
+C:\Users\sh00476\Desktop\Test1>git pull
+remote: Repository not found.
+fatal: repository 'https://github.com/shahkus11/Test.git/' not found
+
+C:\Users\sh00476\Desktop\Test1>git pull
+remote: Repository not found.
+fatal: repository 'https://github.com/shahkus11/Test.git/' not found
+
+C:\Users\sh00476\Desktop\Test1>git commit -m "test2"
+On branch master
+nothing to commit, working directory clean
+
+C:\Users\sh00476\Desktop\Test1>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\sh00476\Desktop\Test1>git commit -m "test 2"
+On branch master
+Changes not staged for commit:
+        modified:   index.html
+
+no changes added to commit
+
+C:\Users\sh00476\Desktop\Test1>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\sh00476\Desktop\Test1>git commit -m "test2"
+On branch master
+Changes not staged for commit:
+        modified:   index.html
+
+no changes added to commit
+
+C:\Users\sh00476\Desktop\Test1>git add index.html
+
+C:\Users\sh00476\Desktop\Test1>git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   index.html
+
+
+C:\Users\sh00476\Desktop\Test1>git git remote add origin https://github.com/shahkus11/Test.git
+git: 'git' is not a git command. See 'git --help'.
+
+Did you mean this?
+        init
+
+C:\Users\sh00476\Desktop\Test1>git init
+Reinitialized existing Git repository in C:/Users/sh00476/Desktop/Test1/.git/
+
+C:\Users\sh00476\Desktop\Test1>git remote add origin https://github.com/shahkus11/Test.git
+fatal: remote origin already exists.
+
+C:\Users\sh00476\Desktop\Test1>git pull
+remote: Repository not found.
+fatal: repository 'https://github.com/shahkus11/Test.git/' not found
+
+C:\Users\sh00476\Desktop\Test1>git clone https://github.com/shahkus11/Test.git/
+Cloning into 'Test'...
+remote: Repository not found.
+fatal: repository 'https://github.com/shahkus11/Test.git/' not found
+
+C:\Users\sh00476\Desktop\Test1>ggit pull https://github.com/shahkus11/Test.git/
+'ggit' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\sh00476\Desktop\Test1>git pull https://github.com/shahkus11/Test.git/
+remote: Repository not found.
+fatal: repository 'https://github.com/shahkus11/Test.git/' not found
+
+C:\Users\sh00476\Desktop\Test1>git push origin master
+remote: Repository not found.
+fatal: repository 'https://github.com/shahkus11/Test.git/' not found
+
+C:\Users\sh00476\Desktop\Test1>git pull origin master
+remote: Repository not found.
+fatal: repository 'https://github.com/shahkus11/Test.git/' not found
+
+C:\Users\sh00476\Desktop\Test1>git merge master
+Already up-to-date.
+
+C:\Users\sh00476\Desktop\Test1>git merge origin
+merge: origin - not something we can merge
+
+C:\Users\sh00476\Desktop\Test1>git diff origin master
+fatal: ambiguous argument 'origin': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+C:\Users\sh00476\Desktop\Test1>git diff origin -- master
+fatal: bad revision 'origin'
+
+C:\Users\sh00476\Desktop\Test1>git pull master origin
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\sh00476\Desktop\Test1>git pull origin master
+remote: Repository not found.
+fatal: repository 'https://github.com/shahkus11/Test.git/' not found
+
+C:\Users\sh00476\Desktop\Test1>
+C:\Users\sh00476\Desktop\Test1>git pull master
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\sh00476\Desktop\Test1>git clone https://github.com/shahkus11/Test.git/
+Cloning into 'Test'...
+remote: Repository not found.
+fatal: repository 'https://github.com/shahkus11/Test.git/' not found
+
+C:\Users\sh00476\Desktop\Test1>git remote add origin https://github.com/shahkush11/Test.git
+fatal: remote origin already exists.
+
+C:\Users\sh00476\Desktop\Test1>git pull
+remote: Repository not found.
+fatal: repository 'https://github.com/shahkus11/Test.git/' not found
+
+C:\Users\sh00476\Desktop\Test1>git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   index.html
+
+
+C:\Users\sh00476\Desktop\Test1>git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   index.html
+
+
+C:\Users\sh00476\Desktop\Test1> git logt
+git: 'logt' is not a git command. See 'git --help'.
+
+Did you mean this?
+        log
+
+C:\Users\sh00476\Desktop\Test1> git log
+commit 71bc4887901338fde42c4aed984ab9aa9f61ccb3
+Author: Kush Piyush Shah <sh00476@oerb.lan>
+Date:   Wed Jul 13 11:38:20 2016 +0300
+
+    first test
+
+C:\Users\sh00476\Desktop\Test1>git remote add origin https://github.com/shahkush11/Test.git
+fatal: remote origin already exists.
+
+C:\Users\sh00476\Desktop\Test1>git pull origin master
+remote: Repository not found.
+fatal: repository 'https://github.com/shahkus11/Test.git/' not found
+
+C:\Users\sh00476\Desktop\Test1>git remote rm https://github.com/shahkush11/Test.git
+fatal: No such remote: https://github.com/shahkush11/Test.git
+
+C:\Users\sh00476\Desktop\Test1>git remote -v
+origin  https://github.com/shahkus11/Test.git (fetch)
+origin  https://github.com/shahkus11/Test.git (push)
+
+C:\Users\sh00476\Desktop\Test1>git remote rm
+usage: git remote remove <name>
+
+
+
+C:\Users\sh00476\Desktop\Test1>git remote rm https://github.com/shahkush11/Test.git
+fatal: No such remote: https://github.com/shahkush11/Test.git
+
+C:\Users\sh00476\Desktop\Test1>git pull --rebase origin master
+error: Cannot pull with rebase: Your index contains uncommitted changes.
+
+C:\Users\sh00476\Desktop\Test1>git commit -m "modified index"
+[master 3169890] modified index
+ Committer: Kush Piyush Shah <sh00476@oerb.lan>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+
+C:\Users\sh00476\Desktop\Test1>git pull --rebase origin master
+remote: Repository not found.
+fatal: repository 'https://github.com/shahkus11/Test.git/' not found
+
+C:\Users\sh00476\Desktop\Test1>git remote rm Test
+fatal: No such remote: Test
+
+C:\Users\sh00476\Desktop\Test1>git remote rm destination
+fatal: No such remote: destination
+
+C:\Users\sh00476\Desktop\Test1>git remote rm origin
+
+C:\Users\sh00476\Desktop\Test1>git remote -v
+
+C:\Users\sh00476\Desktop\Test1>git remote add origin https://github.com/shahkush11/Test.git
+
+C:\Users\sh00476\Desktop\Test1>git pull --rebase origin master
+warning: no common commits
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/shahkush11/Test
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+First, rewinding head to replay your work on top of it...
+Applying: first test
+Applying: modified index
+
+C:\Users\sh00476\Desktop\Test1>git log
+commit 27811eaff06fe77b48713f1b19bfe5589e7edc68
+Author: Kush Piyush Shah <sh00476@oerb.lan>
+Date:   Wed Jul 13 12:24:32 2016 +0300
+
+    modified index
+
+commit 3cc056a66fe1ddc9513a421a9340372fc4b128a8
+Author: Kush Piyush Shah <sh00476@oerb.lan>
+Date:   Wed Jul 13 11:38:20 2016 +0300
+
+    first test
+
+commit 363f623af0ca3be6eb6878794339d74fdb06e3fa
+Author: shahkush11 <kushpshah@yahoo.com>
+Date:   Wed Jul 13 11:42:16 2016 +0300
+
+    Update LICENSE.md
+
+C:\Users\sh00476\Desktop\Test1>git push origin master
+Counting objects: 6, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 698 bytes | 0 bytes/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To https://github.com/shahkush11/Test.git
+   363f623..27811ea  master -> master
+
+C:\Users\sh00476\Desktop\Test1>https://github.com/shahkush11/Test.git</p>
 </body>
 </html>
